@@ -1,0 +1,349 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+p {
+    padding: 15px;
+    margin: 0px;
+}
+
+/*--------------------header----------------------*/
+
+.header {
+    min-height: 85vh;
+    width: 100%;
+    background-image: url(images/background.jpg);
+}
+
+.row-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.profile-pic {
+    height: 400px;
+    width: auto;
+    border-radius: 100%;
+    opacity: 90%;
+}
+
+.card-personal {
+    height: 400px;
+    width: 400px;
+    background-color: #DDDDDD;
+    opacity: 85%;
+}
+
+.card-personal h3 {
+    font-size: 30px;
+    padding-left: 40px;
+    padding-top: 30px;
+    font-family: "Sen", sans-serif;
+    font-weight: normal;
+}
+
+.card-personal ul {
+    list-style: none;
+    font-size: 14px;
+    font-family: sans-serif;
+    padding-left: 40px;
+    padding-top: 20px;
+    line-height: 1.5;
+}
+
+.card-personal a {
+    color: #000;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+@media(max-width: 850px) {
+    .row-header {
+        flex-direction: column;
+    }
+
+    .header {
+        min-height: 85vh;
+        width: 100%;
+        padding: 50px 0;
+    }
+
+    .row-header {
+        padding: 0;
+    }
+}
+
+/*--------------------------about me--------------------------------*/
+
+.about-me {
+    padding: 30px 0;
+    background: #f2f2f2;
+}
+
+.about-me-text {
+    width: 50%;
+    margin: auto;
+    text-align: left;
+}
+
+.about-me-text h1 {
+    font-size: 32px;
+    font-family: "Sen", sans-serif;
+    padding: 50px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.about-me-text p {
+    font-size: 18px;
+    font-family: "Sen", sans-serif;
+    line-height: 1.6;
+}
+
+@media(max-width: 850px) {
+    .about-me-text {
+        width: 90%;
+        margin: auto;
+        text-align: left;
+    }
+}
+
+
+/*--------------------------------offer---------------------------------------*/
+
+.offer {
+    text-align: center;
+    padding-top: 50px;
+    background: #fff;
+}
+
+.row-offer {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+.offer-col {
+    text-align: left;
+    flex-basis: 31%;
+    background: #FFF2F2;
+    border-radius: 10px;
+    padding: 20px 12px;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    font-family: "Sen", sans-serif;
+    font-weight: normal;
+    line-height: 1.5;
+    opacity: 90%;
+}
+
+.offer-col h3 {
+    text-align: center;
+}
+
+.offer h1 {
+    font-size: 32px;
+    font-family: "Sen", sans-serif;
+    font-weight: normal;
+}
+
+@media(max-width: 850px) {
+    .row-offer {
+        flex-direction: column;
+    }
+}
+
+
+/*------------------------------experience------------------------------------*/
+
+.experience {
+    padding: 50px 0;
+    background: #f2f2f2;
+}
+
+.experience h1 {
+    text-align: center;
+    font-size: 32px;
+    font-family: "Sen", sans-serif;
+    font-weight: normal;
+}
+
+.experience-row {
+    padding-top: 20px;
+    width: 60%;
+    margin: 30px auto;
+    display: flex;
+}
+
+.experience-col-1 {
+    flex: 1;
+    font-family: "Sen", sans-serif;
+}
+
+.experience-col-2 {
+    flex: 2;
+    font-family: "Sen", sans-serif;
+}
+
+.experience-col-1 h4 {
+    padding-bottom: 30px;
+}
+
+.experience-col-2 h3 {
+    padding-bottom: 30px;
+}
+
+.experience-col-2 ul {
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+.button {
+    margin-top: 10px;
+    background-color:transparent;
+	border:2px solid #000;
+	display:inline-block;
+	cursor:pointer;
+	color:#000;
+	font-family:Courier New;
+	font-size:15px;
+	padding:6px 24px;
+	text-decoration:none;
+}
+
+.button:hover {
+    border-color: #000;
+    color: #000;
+}
+
+@media(max-width: 850px) {
+    .experience-row {
+        flex-direction: column;
+        width: 80%;
+    }
+}
+
+/*---------------------------------------education-----------------------------------------*/
+
+.education {
+    padding: 50px 0;
+    background: #ffffff;
+}
+
+.education h1 {
+    text-align: center;
+    font-size: 32px;
+    font-family: "Sen", sans-serif;
+    font-weight: normal;
+}
+
+.education-row {
+    padding-top: 20px;
+    width: 60%;
+    margin: 30px auto;
+    display: flex;
+}
+
+.education-col-1 {
+    flex: 1;
+    font-family: "Sen", sans-serif;
+}
+
+.education-col-2 {
+    flex: 2;
+    font-family: "Sen", sans-serif;
+}
+
+.education-col-1 h4 {
+    padding-bottom: 30px;
+}
+
+.education-col-2 h3 {
+    padding-bottom: 30px;
+}
+
+.education-col-2 ul {
+    font-size: 18px;
+    padding-left: 20px;
+    line-height: 1.3;
+}
+
+@media(max-width: 850px) {
+    .education-row {
+        flex-direction: column;
+        width: 80%;
+    }
+}
+
+/*----------------------------------------skills--------------------------------------------*/
+
+.skills {
+    padding: 20px 0px 0px 0px;
+    text-align: center;
+    font-family: "Sen", sans-serif;
+    font-weight: normal;
+    background: #a8ceeb;
+}
+
+.skills h1 {
+    font-size: 32px;
+    font-family: "Sen", sans-serif;
+    font-weight: normal;
+}
+
+.skills-row {
+    width: 60%;
+    display: flex;
+    margin: 30px auto;
+    line-height: 1.3;
+}
+
+.skills-col-1 {
+    flex: 1;
+}
+
+.skills-col-1 h3 {
+    border: 2px solid #000;
+}
+
+.skills-col-2 {
+    flex: 2;
+    display: flex;
+}
+
+.skills-element {
+    flex: 1;
+    text-align: center;
+}
+
+.skills-level {
+    flex: 1;
+    text-align: center;
+}
+
+.skills p {
+    padding: 5px 0;
+}
+
+@media(max-width: 850px) {
+    .skills-row {
+        width: 80%;
+        flex-direction: column;
+    }
+
+    .skills-col-2 {
+        margin-top: 20px;
+    }
+}
+
+/*--------------------------------footer------------------------------------*/
