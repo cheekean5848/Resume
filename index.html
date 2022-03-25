@@ -14,26 +14,39 @@
 </head>
 <body>
     <section class="header">
+
+        <nav>
+            <h1>Chee Kean</h1>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">About Me</a></li>
+                    <li><a href="">Experience</a></li>
+                    <li><a href="">Education</a></li>
+                    <li><a href="">Skills</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+
         <div class="row-header">
             <div>
                 <img class="profile-pic" src="./images/dp.jpg" alt="Chee Kean">
             </div>
             <div class="card-personal">
-                <h3>Chee Kean Loo</h3>
+                <h3>Chee Kean</h3>
                 <ul>
                     <li><strong>Phone:</strong></li>
                     <li>+65 8881 5766</li>
                 </ul>
                 <ul>
                     <li><strong>Email:</strong></li>
-                    <li>loo.ck@u.nus.edu (Preferred)</li>
+                    <li>loo.ck@u.nus.edu (preferred)</li>
                     <li>loo.ck5848@outlook.com</li>
                 </ul>
                 <ul>
-                    <li><strong>Download my resume:</strong></li>
-                    <li>
-                        <a href="docs/resume.pdf" target="_blank" rel="noopener noreferrer"><i class="fa fa-file-pdf-o fa-lg" ></i></a>
-                    </li>
+                    <a href="./docs/resume.pdf" target="_blank" rel="noopener noreferrer" class="button">Resume</a>
                 </ul>
             </div>
         </div>
@@ -262,9 +275,6 @@
         </div>
         <p>Copyright © Loo Chee Kean <span id="date"></span></p>
     </section>
-
-    <script>
-        document.getElementById("date").innerHTML = new Date().getFullYear()
-    </script>
+    <script type="text/javascript" src="./main.js"></script>
 </body>
 </html>
