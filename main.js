@@ -1,14 +1,15 @@
-document.getElementById("date").innerHTML = new Date().getFullYear()
+const toTop = document.querySelector(".to-top");
 
-const navLinks = document.getElementById("navLinks")
+document.getElementById("date").innerHTML = new Date().getFullYear();
 
-function showMenu() {
-    navLinks.style.right = "0";
-    // document.getElementsByTagName("html")[0].style.overflow = "hidden"
-}
+document.querySelector(".menu").addEventListener("click", function(event) {
+    document.querySelector(".nav-bar").classList.toggle("active");
+})
 
-function hideMenu() {
-    navLinks.style.right = "-200px"
-    // document.getElementsByTagName("html")[0].style.overflowY = "scroll"
-    // document.getElementsByTagName("html")[0].style.overflowX = "hidden"
-}
+window.addEventListener("scroll", function(event) {
+    if (this.window.scrollY > 100) {
+        toTop.classList.add("active");
+    } else {
+        toTop.classList.remove("active");
+    }
+})

@@ -13,22 +13,22 @@
     <title>Chee Kean</title>
 </head>
 <body>
-    <section class="header">
-
-        <nav>
+    <header>
+        <div>
             <h1>Chee Kean</h1>
-            <div class="nav-links" id="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
-                <ul>
-                    <li><a href="">About Me</a></li>
-                    <li><a href="">Experience</a></li>
-                    <li><a href="">Education</a></li>
-                    <li><a href="">Skills</a></li>
-                </ul>
-            </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </div>
+        <div class="menu"><i class="fa fa-bars"></i></div></i>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+            </ul>
         </nav>
+    </header>
 
+    <section class="header">
 
         <div class="row-header">
             <div>
@@ -51,7 +51,7 @@
             </div>
         </div>
     </section>
-    <section class="about-me">
+    <section id="about-me" class="about-me">
         <div class="about-me-text">
             <h1>Hello! I'm Chee Kean</h1>
             <p>I am a sophomore student in the National University of Singapore (NUS) pursuing degree in Computer Science.</p>
@@ -99,7 +99,7 @@
             </div>
         </div>
     </section>
-    <section class="experience">
+    <section id="experience" class="experience">
 
         <h1>Experience</h1>
 
@@ -141,7 +141,7 @@
 
     </section>
 
-    <section class="education">
+    <section id="education" class="education">
 
         <h1>Education</h1>
 
@@ -183,7 +183,7 @@
         </div>
 
     </section>
-    <section class="skills">
+    <section id="skills" class="skills">
         <h1>Skills</h1>
 
         <div class="skills-row">
@@ -275,6 +275,9 @@
         </div>
         <p>Copyright © Loo Chee Kean <span id="date"></span></p>
     </section>
+    <a href="#" class="to-top">
+        <i class="fa fa-chevron-up"></i>
+    </a>
     <script type="text/javascript" src="./main.js"></script>
 </body>
 </html>
